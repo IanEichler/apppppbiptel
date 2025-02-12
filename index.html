@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando...</title>
+  <script>
+    function redirectUser() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=br.com.segware.mysecurity.biptel&hl=pt_BR";
+      } else if (/iPhone|iPad|iPod/.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/br/app/simples-acesso/id6448798554";
+      } else {
+        window.location.href = "https://apps.apple.com/br/app/simples-acesso/id6448798554";
+      }
+    }
+  </script>
+</head>
+<body onload="redirectUser()">
+</body>
+</html>
